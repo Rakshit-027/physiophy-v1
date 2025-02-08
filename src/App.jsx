@@ -13,6 +13,13 @@ import SignUp from './components/SignUp';
 import FAQ from './components/FAQ.jsx';
 import AdminPanel from './components/AdminPanel.jsx';
 import PatientPanel from './components/PatientPanel.jsx';
+import Testimonials from './components/Testimonials.jsx';
+import MediaGallery from './components/MediaGallery.jsx';
+import MediaUpload from './components/MediaUpload.jsx';
+import ClinicPhotos from './components/ClinicPhotos.jsx';
+import ClinicVideos from './components/ClinicVideos.jsx';
+import MainAdmin from './components/MainAdmin.jsx'; 
+
 
 function App() {
   const [showAuth, setShowAuth] = useState(null);
@@ -117,9 +124,15 @@ function Content({ isLoggedIn }) {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/appointment" element={isLoggedIn ? <Appointment /> : <Home />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path='/media' element={<MediaGallery/>}/>
           <Route path="/faq" element={<FAQ />} />
           <Route path="/admin" element={<AdminPanel />} />
           <Route path="/profile" element={<PatientPanel />} />
+          <Route path="/media_upload" element={<MediaUpload />} />
+          <Route path='ClinicsPhotos' element={<ClinicPhotos/>}/>
+          <Route path='/ClinicVideos' element={<ClinicVideos/>}/>
+          <Route path='/mainadmin' element={<MainAdmin/>}/>
         </Routes>
       </motion.div>
     </AnimatePresence>

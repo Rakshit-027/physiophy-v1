@@ -113,7 +113,16 @@ const Navbar = ({
             <RouterLink to="/testimonials" onClick={closeMenu}>Testimonials</RouterLink>
           </li>
           <li className="nav-item">
+            <RouterLink to="/media_upload" onClick={closeMenu}></RouterLink>
+          </li>
+          <li className="nav-item">
+            <RouterLink to="/Media" onClick={closeMenu}>Media</RouterLink>
+          </li>
+          <li className="nav-item">
             <RouterLink to="/blog" onClick={closeMenu}>Blog</RouterLink>
+          </li>
+          <li className="nav-item">
+            <RouterLink to="/mainadmin" onClick={closeMenu}></RouterLink>
           </li>
 
           {/* Authentication and User Menu */}

@@ -1,0 +1,44 @@
+.custom_sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #222;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 50;
+}
+
+.custom_sidebar.open {
+  left: 0;
+}
+
+.sidebar_toggle_button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}

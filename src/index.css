@@ -1,6 +1,10 @@
-/* Reset and base styles */
+
+Reset and base styles
+
+
+
 body{
-  background-color:#E3F2E7 ;
+  background-image: url("./bg.jpg");
 }
 :root {
   --primary-green: #1abc9c;;
@@ -160,7 +164,7 @@ body {
 }
 
 /* Home Page Styles */
-.home {
+/* .home {
   padding-top: 80px;
   min-height: 100vh;
 }
@@ -221,7 +225,7 @@ body {
 .feature-card h3 {
   color: var(--dark-green);
   margin: 1rem 0;
-}
+} */
 
 /* Enhanced Responsive Design */
 @media (max-width: 768px) {

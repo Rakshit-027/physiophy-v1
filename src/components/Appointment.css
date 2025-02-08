@@ -1,7 +1,7 @@
 /* Appointment Container */
 .appointment-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 8rem auto;
     padding: 40px 20px;
   }
   
@@ -71,6 +71,7 @@
     padding: 15px;
     border: 2px solid #e0e0e0;
     border-radius: 10px;
+    color: #333;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -84,7 +85,7 @@
   
   .date-button.selected {
     background: #00897b;
-    color: white;
+    color: black;
     border-color: #00897b;
   }
   
@@ -110,6 +111,7 @@
   
   .time-button {
     padding: 12px;
+    color: #333;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     background: white;
